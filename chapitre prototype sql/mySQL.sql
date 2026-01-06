@@ -35,7 +35,7 @@ order by priorete ASC;
 
 --proget terminee avant Avril 2026--
 select * 
-from proegt 
+from proget 
 where date-fin < 01-04-2026;
 
 -- les employés développeurs--
@@ -62,7 +62,7 @@ select t.*
 from tache T
 join proget P
 on t.numproget = p.proget
-WHERE p.titre = 'site-ecommrce beaty';
+WHERE p.titre = 'site-ecommerce beaty';
 
 --Afficher le nombre de taches 'terminées' du projet  'Site E-commerce Beauty'--
 select count(*) AS numTterminee
@@ -98,4 +98,5 @@ WHERE etat = 'Non commencée';
 --Supprimer l'employé "ALAMI AHMED"--
 DELETE FROM employe 
 where nom = 'alawi' 
+
 and prenom = 'ahmed';
